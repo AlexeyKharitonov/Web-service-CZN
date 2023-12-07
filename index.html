@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Salaries</title>     
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+          <span class="navbar-brand text-white-50 d-flex justify-content-center">Добро пожаловать!</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="images/CZN.png" alt="CZN">
+                        </div>
+                        <h1 class="text-center">Центр занятости населения г. Москвы</h1>
+                    </div>
+                    <div class="col-6">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://images.pexels.com/photos/12369260/pexels-photo-12369260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 rounded" alt="Moscow_1">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Собор Василия Блаженного</h5>
+                                  <p>Православный храм расположен на Красной площади и является одним из символов России</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/556195/pexels-photo-556195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 rounded" alt="Moscow_2">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Московский государственный университет имени М.В. Ломоносова (МГУ)</h5>
+                                  <p>Один из самых престижных и старейших университетов России. Главное здание МГУ расположено на Воробьёвых горах</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/8566770/pexels-photo-8566770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 rounded" alt="Moscow_3">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Высотные здания Москва-Сити, известные как Московский Международный Деловой Центр</h5>
+                                  <p>Это современный коммерческий район в Москве, где сосредоточены офисы многих крупных компаний, а также жилые здания, рестораны и развлекательные заведения</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                  <div class="d-flex justify-content-center">
+                    <h2 class="text-center mx-5">Список ваканский</h2>
+                    <button class="btn btn-primary mx-2 btn-sort-title">Сортировать по вакансии</button>
+                    <button class="btn btn-primary mx-2 btn-sort-salary">Сортировать по зарплате</button>
+                    <button class="btn btn-primary btn-reset">Сбросить</button>
+                  </div>
+                    <div class="row pt-5 pb-5 ">
+                      <div id="modal-container"></div>
+                        <div class="col">
+                            <div class="card vacancies-container">
+                              </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            2023 © Все права защищены.
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

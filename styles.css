@@ -1,0 +1,16 @@
+body {
+  background-color: #a6a6a6;
+  color: #333333;
+}
+
+section {
+  margin: 50px 0;
+}
+
+.card-body {
+  max-height: 200px;
+}
+
+.pagination {
+  margin-bottom: 0;
+}
